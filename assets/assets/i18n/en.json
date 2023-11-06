@@ -1,0 +1,13 @@
+{
+  "title": "Developer Dmytro Turskyi",
+  "home": {
+    "name": "Dmytro Turskyi",
+    "title": "Developer",
+    "suffix_title": "Flutter/Android",
+    "error": "error",
+    "cannot_launch": "Could not launch",
+    "experience": "Experience",
+    "flutter_sdk": "Flutter SDK:",
+    "android_sdk": "Android SDK:"
+  }
+}
