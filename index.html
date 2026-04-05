@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-N3XJ6TWP');</script>
+    <!-- End Google Tag Manager -->
+
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta
+        content="Dmytro Turskyi (Дмитро Турський) personal website: Flutter developer portfolio, projects, contacts, and professional updates."
+        name="description">
+    <meta
+        content="Dmytro Turskyi, Дмитро Турський, Turskyi, Flutter developer, portfolio"
+        name="keywords">
+    <meta
+        content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
+        name="robots">
+    <meta content="Dmytro Turskyi" name="author">
+    <link href="https://turskyi.com/" rel="canonical">
+    <link href="https://turskyi.com/" hreflang="en" rel="alternate">
+    <link href="https://turskyi.com/" hreflang="uk" rel="alternate">
+    <link href="https://turskyi.com/" hreflang="x-default" rel="alternate">
+
+    <meta content="website" property="og:type">
+    <meta content="https://turskyi.com/" property="og:url">
+    <meta content="Dmytro Turskyi | Дмитро Турський" property="og:title">
+    <meta
+        content="Personal website of Dmytro Turskyi (Дмитро Турський): Flutter developer portfolio, projects, and contact information."
+        property="og:description">
+    <meta content="https://turskyi.com/icons/Icon-512.png" property="og:image">
+    <meta content="en_US" property="og:locale">
+    <meta content="uk_UA" property="og:locale:alternate">
+
+    <meta content="summary_large_image" name="twitter:card">
+    <meta content="https://turskyi.com/" name="twitter:url">
+    <meta content="Dmytro Turskyi | Дмитро Турський" name="twitter:title">
+    <meta
+        content="Personal website of Dmytro Turskyi (Дмитро Турський): Flutter developer portfolio, projects, and contact information."
+        name="twitter:description">
+    <meta content="https://turskyi.com/icons/Icon-512.png" name="twitter:image">
+
+    <!-- iOS meta tags & icons -->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="turskyi" name="apple-mobile-web-app-title">
+    <link href="icons/Icon-192.png" rel="apple-touch-icon">
+
+    <!-- Favicon -->
+    <link href="favicon.png" rel="shortcut icon" type="image/png" />
+
+    <title>Dmytro Turskyi | Дмитро Турський</title>
+    <link href="manifest.json" rel="manifest">
+    <meta content="VkHN9no44ctnoO6FahLWnNSIOyckCVYkdjffGbG8l-o"
+        name="google-site-verification" />
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Dmytro Turskyi",
+            "alternateName": [
+                "Дмитро Турський",
+                "Dmytro Turskyi"
+            ],
+            "url": "https://turskyi.com/",
+            "image": "https://turskyi.com/icons/Icon-512.png",
+            "email": "mailto:dmytro@turskyi.com",
+            "jobTitle": "Flutter Developer",
+            "sameAs": [
+                "https://github.com/Turskyi",
+                "https://www.linkedin.com/in/dmytroturskyi",
+                "https://www.linkedin.com/company/dmytro-turskyi/"
+            ]
+        }
+    </script>
+
+    <style>
+        body {
+            margin: 0;
+            background: #a6a7a7;
+            color: #ffffff;
+            font-family: Georgia, "Times New Roman", serif;
+        }
+
+        #initial-splash {
+            position: fixed;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #a6a7a7;
+            color: #ffffff;
+            text-align: center;
+            z-index: 9999;
+        }
+
+        #initial-splash.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .splash-card {
+            padding: 0 24px;
+            display: grid;
+            gap: clamp(0.6rem, 2.2vw, 1.1rem);
+            justify-items: center;
+        }
+
+        .splash-name {
+            margin: 0;
+            font-size: clamp(2rem, 7vw, 4rem);
+            font-weight: 800;
+            line-height: 1.1;
+            letter-spacing: 0.02em;
+        }
+
+        .code-loader {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.28em 0.7em;
+            min-width: min(92vw, 24ch);
+            border: 1px solid rgba(255, 255, 255, 0.42);
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.09);
+            font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+            font-size: clamp(0.88rem, 2.35vw, 1.25rem);
+            letter-spacing: 0.01em;
+        }
+
+        .code-loader-text {
+            display: inline-block;
+            width: 0;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing 1.2s steps(11, end) forwards;
+        }
+
+        .code-loader-cursor {
+            display: inline-block;
+            width: 1ch;
+            overflow: hidden;
+            opacity: 0;
+            animation: show-cursor 0s linear 1.2s forwards, cursor-blink 0.92s steps(1, end) 1.2s infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 11ch;
+            }
+        }
+
+        @keyframes show-cursor {
+            from {
+                opacity: 1;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes cursor-blink {
+
+            0%,
+            49% {
+                opacity: 1;
+            }
+
+            50%,
+            100% {
+                opacity: 0;
+            }
+        }
+
+        noscript {
+            display: block;
+            padding: 24px;
+        }
+
+        a {
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div aria-hidden="true" id="initial-splash">
+        <div class="splash-card">
+            <p class="splash-name">Dmytro Turskyi</p>
+            <div aria-label="flutter run" class="code-loader">
+                <span class="code-loader-text">flutter run</span><span
+                    aria-hidden="true" class="code-loader-cursor">_</span>
+            </div>
+            <p class="splash-name">Дмитро Турський</p>
+        </div>
+    </div>
+
+    <h1
+        style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">
+        Dmytro Turskyi - Дмитро Турський
+    </h1>
+
+    <!--suppress HtmlUnknownTarget -->
+    <script>
+        function hideInitialSplash() {
+            var splash = document.getElementById('initial-splash');
+            if (!splash || splash.classList.contains('hidden')) {
+                return;
+            }
+
+            splash.classList.add('hidden');
+
+            if (splash.parentNode) {
+                splash.parentNode.removeChild(splash);
+            }
+        }
+
+        window.addEventListener('flutter-first-frame', hideInitialSplash, {
+            once: true
+        });
+
+        // Event-only fallback with no artificial timer delay.
+        window.addEventListener('load', hideInitialSplash, {
+            once: true
+        });
+    </script>
+    <script async src="flutter_bootstrap.js"></script>
+
+    <noscript>
+        <p>
+            Dmytro Turskyi (Дмитро Турський) personal website. Please enable
+            JavaScript to view this Flutter web app.
+        </p>
+        <p>
+            Read more: <a href="/about.html">About Dmytro Turskyi</a> |
+            <a href="/contact.html">Contact</a>
+        </p>
+    </noscript>
+</body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe height="0"
+        src="https://www.googletagmanager.com/ns.html?id=GTM-N3XJ6TWP"
+        style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+</html>
